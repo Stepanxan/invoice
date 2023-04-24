@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+  <form action="/" method="post" class="" >
+    <p id="add products">Новий товар</p>
+    <div>
+      <form>
+        <select name="categor" class="select" required >
+          <option disabled selected>Виберіть категорію</option>
+          <option value="Товари для дому">Товари для дому</option>
+          <option value="Товари для машини">Товари для машини</option>
+          <option value="Товари для домашніх улюбленців">Товари для домашніх улюбленців</option>
+        </select>
+      </form>
+      <input type="text" class="textarea" id="name" name="name" required maxlength="50" placeholder="Введіть назву товару"></<input>
+      <input type="text" class="textarea" id="quantity" name="quantity" required maxlength="50" placeholder="Введіть кількість товару"></<input>
+      <input type="text" class="textarea" id="price" name="price" required maxlength="50" placeholder="Введіть вартість товару"></<input>
+
+
+      <input type='submit' class="button" value="Додати товар">
+      <a id="add_invoice" class="button_option" href="/invoice/expense">Перевірка нестачі товару</a>
+      <a id="profit" class="button_option" href="/profit_report/<start_date>/<end_date>">Звіт</a>
+    </div>
+  </form>
+</body>
+</html>
